@@ -32,7 +32,7 @@ function Welcome() {
                 <h1 className={`text-animate ${!showCursor ? 'no-cursor' : ''}`}>
                     Your so Cutie pie
                 </h1>
-                <img className='w-[170px]' src={shina1} alt="" />
+                <img className='w-[200px]' src={shina1} alt="" />
                 <br />
                 <h1 className={`text-animate ${!showCursor ? 'no-cursor' : ''}`}>
                     Ask rako gamay shin haha
