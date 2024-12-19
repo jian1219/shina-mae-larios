@@ -47,3 +47,50 @@
   .Welcome-but:hover{
     background-color: rgb(98, 22, 80);
   }
+
+
+
+
+
+
+  .ask-bg{
+    background-image: url("../images/shina bg.jpg");
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+
+  .ask-bg-blur{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(33, 0, 24, 0.741);
+  }
+
+
+  .form-group{
+    margin-top: 10px;
+  }
+
+  .form-group p{
+    font-size: 13px;
+    margin-left: 3px;
+
+  }
+
+  input{
+    padding: 3px 6px;
+    border-radius: 3px;
+    width: 200px;
+    color: black;
+  }
+
+  .submit-btn{
+    background-color: rgb(81, 2, 105);
+    padding: 4px 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+  }
