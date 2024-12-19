@@ -13,7 +13,7 @@ function Question() {
   return (
     <div className='px-5'>
       <h1 className='text-[12px] '>
-        Shin why natulog namn ka i want night call hahaha I'm just bored lang now so I created this website para madali ang oras and to ask you a very very simple questions
+        Shin i want a night call hahaha, whyy are you so very himoss. I created this website para madali ang oras and to ask you a very very simple questions
       </h1>
 
 

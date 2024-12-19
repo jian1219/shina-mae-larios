@@ -11,11 +11,7 @@ function Ask1() {
   // State to store form data
   const [formData, setFormData] = useState({
     first_name: '',
-    middle_name: '',
-    last_name: '',
     birthday: '',
-    address: '',
-    age: '',
     contact_number: ''
   });
 
@@ -32,18 +28,14 @@ function Ask1() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const { first_name, middle_name, last_name, birthday, address, age, contact_number } = formData;
+    const { first_name, birthday, contact_number } = formData;
 
     // Insert data into Supabase
     const { data, error } = await supabase
       .from('users')
       .insert([{
         first_name,
-        middle_name,
-        last_name,
         birthday,
-        address,
-        age,
         contact_number
       }]);
 
@@ -65,34 +57,13 @@ function Ask1() {
           <form onSubmit={handleSubmit} className="mt-6 flex justify-center">
             <div>
               <div className="form-group">
-                <p>First Name:</p>
+                <p>Full Name:</p>
                 <input
                   type="text"
                   name="first_name"
                   value={formData.first_name}
                   onChange={handleChange}
-                  placeholder="First Name"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <p>Middle name:</p>
-                <input
-                  type="text"
-                  name="middle_name"
-                  value={formData.middle_name}
-                  onChange={handleChange}
-                  placeholder="Middle Name"
-                />
-              </div>
-              <div className="form-group">
-                <p>Last name:</p>
-                <input
-                  type="text"
-                  name="last_name"
-                  value={formData.last_name}
-                  onChange={handleChange}
-                  placeholder="Last Name"
+                  placeholder="Full Name"
                   required
                 />
               </div>
@@ -108,28 +79,6 @@ function Ask1() {
                 />
               </div>
               <div className="form-group">
-                <p>Address:</p>
-                <input
-                  type="text"
-                  name="address"
-                  value={formData.address}
-                  onChange={handleChange}
-                  placeholder="Address"
-                  required
-                />
-              </div>
-              <div className="form-group">
-                <p>Age:</p>
-                <input
-                  type="number"
-                  name="age"
-                  value={formData.age}
-                  onChange={handleChange}
-                  placeholder="Age"
-                  required
-                />
-              </div>
-              <div className="form-group">
                 <p>Number b haha</p>
                 <input
                   type="text"
@@ -141,7 +90,7 @@ function Ask1() {
                 />
               </div>
 
-              <div className="flex justify-center">
+              <div className="flex justify-center mt-[100px]">
                 <button type="submit" className="submit-btn">
                   Submit
                 </button>
