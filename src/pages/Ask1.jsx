@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import "../css/General.css";
 import { supabase } from '../config/supabaseClient';
 
+import Footer from './Footer';
+
 function Ask1() {
   // State to store form data
   const [formData, setFormData] = useState({
@@ -52,9 +54,9 @@ function Ask1() {
   };
 
   return (
-    <div className='screencover'>
-        <div className="ask-bg">
-        <div className="ask-bg-blur">
+
+    <div className="ask-bg">
+      <div className="ask-bg-blur">
         <div className=" pt-10">
           <h1 className='text-center'>Hello shin, I want to know you more</h1>
           <h2 className='text-center'>Answer honestly, please haha</h2>
@@ -145,11 +147,12 @@ function Ask1() {
                 </div>
             </div>
           </form>
+          <div className='mt-[100px]'>
+            <Footer />
+          </div>
         </div>
       </div>
     </div>
-    </div>
-   
   );
 }
 

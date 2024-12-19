@@ -1,3 +1,9 @@
+.footer{
+    background-color: rgba(48, 0, 40, 0.718);
+    padding: 4px 0;
+    text-align: center;
+}
+
 .welcome-bg{
     background-color: pink;
     width: 100%;
