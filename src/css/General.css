@@ -2,6 +2,9 @@
     background-color: rgba(48, 0, 40, 0.718);
     padding: 4px 0;
     text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 1px;
 }
 
 .welcome-bg{
@@ -65,7 +68,7 @@
   .ask-bg{
     background-image: url("../images/shina bg.jpg");
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -102,4 +105,73 @@
     margin-top: 20px;
     border-radius: 5px;
     font-weight: 600;
+  }
+
+  /* Gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-image: url("../images/shina bg.jpg");
+    }
+    50% {
+        background-image: url("../images/shin 3.jpg");
+    }
+    100% {
+        background-image: url("../images/shin 4.jpg");
+    }
+  }
+  
+  /* Apply the gradient animation */
+  .bg-gradient {
+    width: 100%;
+    height: 100vh;
+    animation: gradientAnimation 10s ease infinite;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+  }
+  
+  .home-bg-blur{
+    background-color: rgba(30, 30, 30, 0.949);
+    width: 100%;
+    height: 100vh;
+  }
+
+  .header{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    border-bottom: 3px solid rgb(48, 48, 48);
+  }
+  .header-left{
+    display: flex;
+    width: auto;
+    height: 50px;
+    align-items: center;
+  }
+
+  .header img{
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .header-right button{
+    margin-left: 10px;
+
+  }
+
+  .active{
+    border-bottom: 2px solid white;
+    
+  }
+
+  .question-button{
+    background: linear-gradient(to right, rgb(53, 1, 90), #6c0348);
+    padding: 4px 30px;
+    border-radius: 5px;
+    font-weight: 600;
+
   }
