@@ -16,7 +16,6 @@ function Home() {
                 <div className='header-right'>
                     <button className='active'>Home</button>
                     <button>About</button>
-                    <button></button>
                 </div>
 
                

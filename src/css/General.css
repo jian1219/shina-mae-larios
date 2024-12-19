@@ -175,3 +175,13 @@
     font-weight: 600;
 
   }
+
+
+  .qandA{
+
+  }
+
+  .question-container{
+    background: linear-gradient(45deg, rgb(56, 6, 110), rgb(0, 89, 111));
+    border-radius: 10px;
+  }
