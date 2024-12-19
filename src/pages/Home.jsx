@@ -1,10 +1,16 @@
 import React from 'react'
 import qalogo from "../icons/qa.png"
-
+import { useNavigate } from 'react-router-dom';
 import Question from './Question'
 import Footer from './Footer'
 
 function Home() {
+
+    const navigate = useNavigate();
+
+    const goToAnotherPage = () => {
+      navigate('/about');
+    };
   return (
     <div className='bg-gradient'>
         <div className='home-bg-blur'>
@@ -15,7 +21,7 @@ function Home() {
                 </div>
                 <div className='header-right'>
                     <button className='active'>Home</button>
-                    <button>About</button>
+                    <button onClick={goToAnotherPage}>About</button>
                 </div>
 
                
