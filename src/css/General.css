@@ -1,0 +1,49 @@
+.welcome-bg{
+    background-color: pink;
+    width: 100%;
+    height: 100vh;
+}
+
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .text-animate {
+    font-size: 15px;
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid black; /* Cursor effect */
+    animation: typing 3s steps(12, end), blink 0.6s step-end infinite;
+    animation-fill-mode: forwards; /* Ensure the final state of the animation persists */
+  }
+  
+  .text-animate.no-cursor {
+    border-right: none; /* Remove the blinking cursor after typing */
+  }
+  
+
+  .Welcome-but{
+    background-color: rgb(184, 22, 146);
+    padding: 5px 10px;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+
+  .Welcome-but:hover{
+    background-color: rgb(98, 22, 80);
+  }
