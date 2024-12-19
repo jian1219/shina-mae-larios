@@ -18,10 +18,21 @@ function Ask1() {
   // Handle input change
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
+
+    // Allow only numeric values for contact_number
+    if (name === "contact_number") {
+      if (/^\d*$/.test(value)) { // Check if value contains only digits
+        setFormData({
+          ...formData,
+          [name]: value
+        });
+      }
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value
+      });
+    }
   };
 
   // Handle form submission
@@ -87,6 +98,7 @@ function Ask1() {
                   onChange={handleChange}
                   placeholder="Contact Number"
                   required
+                  maxLength={15} // Optional: Limit the length
                 />
               </div>
 
