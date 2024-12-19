@@ -221,4 +221,11 @@
       transform: translateX(-50%); /* Adjust to slide half the track */
     }
   }
+
+  .poem{
+    font-family: 'Segoe UI';
+    padding: 3px 20px;
+    font-size: 13px;
+    text-align: center;
+  }
   

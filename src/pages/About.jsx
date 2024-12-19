@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 
 import Footer from './Footer'
 import ImageSlider from './components/ImageSlider';
+import AudioPlayer from './components/AudioPlayer';
 
 function About() {
     const navigate = useNavigate();
@@ -28,6 +29,12 @@ function About() {
 
             <div className='mt-[20px] px-[10px]'>
               <ImageSlider />
+            </div>
+            <div className='mt-5'>
+              <h1 className='poem'>I could write a thousand poems about her beauty, yet no words could capture the way she makes my heart race when she’s near.</h1>
+            </div>
+            <div>
+              <AudioPlayer />
             </div>
 
           <div className='footer'>
