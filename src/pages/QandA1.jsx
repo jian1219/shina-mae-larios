@@ -24,21 +24,52 @@ function QandA1() {
   const questions = [
     {
       question: "What is your favorite color?",
-      input: true,
+      input: true // Marks this question as one with user input
     },
     {
       question: "What kind of personality do you find most attractive in a guy?",
-      options: ["a. Outgoing", "b. Caring", "c. Fun-loving", "d. Strong and independent"],
+      input: true // Marks this question as one with user input
     },
     {
       question: "What's something a guy could do to really impress you?",
-      options: ["a. Be thoughtful", "b. Be funny", "c. Be a good listener", "d. Be spontaneous"],
+      options: ["a. Be thoughtful", "b. Be funny", "c. Be a good listener", "d. Be spontaneous"]
     },
-    // Other questions...
     {
-      question: "Kung mang harana ko sa imo shin sa atubanagan pila ka percent na mo sugot ka hahaha eyts ",
-      input: true,
+      question: "What is your favorite type of music?",
+      options: ["a. Pop", "b. Rock", "c. Jazz", "d. Classical"]
     },
+    {
+      question: "What's your idea of a perfect date?",
+      input: true // Marks this question as one with user input
+    },
+    {
+      question: "What's something you can't live without?",
+      input: true // Marks this question as one with user input
+    },
+    {
+      question: "What's something that always makes you smile?",
+      input: true // Marks this question as one with user input
+    },
+    {
+      question: "What kind of kisses do you enjoy most?",
+      options: ["a. Soft and slow", "b. Passionate and intense", "c. Light and playful", "d. Unexpected and surprising"]
+    },
+    {
+      question: "How do you feel about public displays of affection?",
+      options: ["a. I love them!", "b. Only in the right setting", "c. I prefer more private moments", "d. Depends on the person"]
+    },
+    {
+      question: "Shin do you miss me?",
+      input: true // Marks this question as one with user input
+    },
+    {
+      question: "Aside from me, is there anyone else entertaining you?",
+      options: ["a. Yes", "b. No", "c. Maybe", "d. Secret"]
+    },
+    {
+      question: "Kung mang harana ko sa imo shin unsa na song imo gusto HAHAHA eyts",
+      input: true // Marks this question as one with user input
+    }
   ];
 
   const currentQuestion = questions[currentQuestionIndex];
