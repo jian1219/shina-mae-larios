@@ -52,8 +52,9 @@ function Ask1() {
   };
 
   return (
-    <div className="ask-bg">
-      <div className="ask-bg-blur">
+    <div className='screencover'>
+        <div className="ask-bg">
+        <div className="ask-bg-blur">
         <div className=" pt-10">
           <h1 className='text-center'>Hello shin, I want to know you more</h1>
           <h2 className='text-center'>Answer honestly, please haha</h2>
@@ -147,6 +148,8 @@ function Ask1() {
         </div>
       </div>
     </div>
+    </div>
+   
   );
 }
 
