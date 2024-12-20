@@ -42,6 +42,8 @@ function Welcome() {
                 </h1>
                 <br />
                 <button onClick={goToAnotherPage} className='Welcome-but'>Continue</button>
+                <br />
+                <p className='mt-[30px] text-[10px] italic'>use cp for best experience</p>
             </div>
 
         </div>

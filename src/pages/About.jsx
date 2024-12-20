@@ -27,12 +27,7 @@ function About() {
               </div>
             </div>
 
-            <div className='mt-[20px] px-[10px]'>
-              <ImageSlider />
-            </div>
-            <div className='mt-5'>
-              <h1 className='poem'>I could write a thousand poems about her beauty, yet no words could capture the way she makes my heart race when she’s near.</h1>
-            </div>
+           
             <div>
               <AudioPlayer />
             </div>

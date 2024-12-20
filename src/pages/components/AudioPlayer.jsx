@@ -4,6 +4,8 @@ import audio from "../../audio/music.mp3";
 import playIcon from "../../icons/play (1).png";
 import pauseIcon from "../../icons/pause.png";
 
+import ImageSlider from './ImageSlider';
+
 function AudioPlayer() {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -21,6 +23,12 @@ function AudioPlayer() {
 
   return (
     <div>
+       <div className='mt-[20px] px-[10px]'>
+          <ImageSlider />
+        </div>
+        <div className='mt-5'>
+          <h1 className='poem'>I could write a thousand poems about her beauty, yet no words could capture the way she makes my heart race when she’s near.</h1>
+        </div>
       <audio ref={audioRef}>
         <source src={audio} type="audio/mpeg" />
         Your browser does not support the audio element.
