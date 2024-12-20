@@ -18,11 +18,11 @@ function Welcome() {
   const navigate = useNavigate();
 
   const goToAnotherPage = () => {
-    navigate('/question1');
+    navigate('/flow1');
   };
 
   return (
-    <div className="welcome-bg">
+    <div className="welcome-bg text-white">
         <div className="flex justify-center pt-20">
             <div className='text-center'>
                 <h1 className={`text-animate ${!showCursor ? 'no-cursor' : ''}`}>
@@ -33,12 +33,12 @@ function Welcome() {
                     Your so Cutie pie
                 </h1>
                 <div className='flex justify-center'>
-                    <img className='w-[210px]' src={shina1} alt="" />
+                    <img className='w-[210px] rounded-lg' src={shina1} alt="" />
                 </div>
                
                 <br />
                 <h1 className={`text-animate ${!showCursor ? 'no-cursor' : ''}`}>
-                    Ask rako gamay shin haha
+                    Shin and miming
                 </h1>
                 <br />
                 <button onClick={goToAnotherPage} className='Welcome-but'>Continue</button>
