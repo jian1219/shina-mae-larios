@@ -32,10 +32,17 @@ function Header() {
         {isMenuVisible && (
           <div className='menu-dropdown '>
             <ul>
-              <button onClick={() => navigate('/creator')}>Creator</button>
               <button onClick={() => navigate('/images')}>Images</button>
-              <button onClick={() => navigate('/trip')}>Trip</button>
               <button onClick={() => navigate('/survey')}>Simple Questions</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/creator')}>Soon</button>
             </ul>
           </div>
         )}

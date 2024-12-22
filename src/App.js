@@ -14,6 +14,7 @@ import Flow2 from "./pages/Flow/Flow2";
 import Survey from "./pages/Flow/Survey";
 import Images from "./pages/Flow/Images";
 import Flowabout from "./pages/Flow/Flowabout";
+import Creator from "./pages/Flow/Creator";
 
 import Lock from "./pages/Lock";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/Survey" element={<Survey />} /> 
           <Route path="/images" element={<Images />} /> 
           <Route path="/infoAbout" element={<Flowabout />} /> 
+          <Route path="/creator" element={<Creator />} /> 
           
           
         </Routes>
