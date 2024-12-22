@@ -11,6 +11,10 @@ import audio from "../../audio/music.mp3";
 import pubgpic from "../../images/pubgpic.jpg"
 import qandA from "../../icons/qa.png"
 import AudioPlayer from '../components/AudioPlayer';
+import onepiece from "../../icons/onepiece.jpg"
+import zoro from "../../icons/Roronoa_Zoro.jpg"
+
+
 
 function Flow2() {
   const audioRef = useRef(null);
@@ -65,8 +69,16 @@ function Flow2() {
             <h1 className='text-[16px] font-semibold'>Small Survey Shin hahaha</h1>
             <button className='qandAbutton' onClick={() => navigate('/survey')}> <img className='w-[100px]' src={qandA} alt="" /> </button>
           </div>
+          <div className='py-2 flex items-center'>
+            <img className='w-[200px]' src={zoro} alt="" />
+            <div className='text-center px-4'>
+              <p>THERE IS SOMEONE THAT I MUST MEET AGAIN. AND UNTIL THAT DAY... NOT EVEN DEATH ITSELF CAN TAKE MY LIFE AWAY</p>
+              <p className='mt-[20px]'>- RORONOA ZORO</p>
+            </div>
+           
+          </div>
           <div>
-            asas
+            <img src={onepiece} alt="" />
           </div>
         </div>
       </div>

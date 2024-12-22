@@ -3,7 +3,7 @@ import React from 'react'
 function Footer() {
   return (
     <div className='footer'>
-        Im Falling na
+        I miss my miming
     </div>
   )
 }

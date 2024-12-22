@@ -18,7 +18,7 @@ function Header() {
       <div className='flow-header'>
         <div className='flex items-center gap-3'>
           <img className='w-[35px]' src={petlogo} alt="" />
-          <h1 className='text-[18px] text-white font-semibold'>My Love</h1>
+          <h1 className='text-[18px] text-white font-semibold'>Miming</h1>
         </div>
         <div className='flex gap-4 text-[13px] font-medium'>
           <button onClick={() => navigate('/flow2')}>Home</button>

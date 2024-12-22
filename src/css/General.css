@@ -465,11 +465,11 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  padding: 10px 15px;
+  padding: 5px 15px;
   background: linear-gradient(to right, #a30e6d, #042497);
   border: none;
   border-radius: 5px;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -478,4 +478,33 @@
 
 .back-button:hover {
   background-color: #f0f0f0;
+}
+
+
+
+.emoji-container {
+  width: 100%; /* Full width */
+  overflow: hidden; /* Hide the overflow of the heart emojis */
+  position: relative;
+  padding: 3px 0; /* Adjust top and bottom padding */
+}
+
+.emoji-scroll {
+  display: flex;
+  white-space: nowrap; /* Prevent wrapping of the emojis */
+  animation: scrollLeft 15s linear infinite; /* Scroll animation */
+}
+
+.heart-emoji {
+  font-size: 20px; /* Size of the heart emoji */
+  margin-right: 4px; /* Space between heart emojis */
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(100%); /* Start from right side */
+  }
+  100% {
+    transform: translateX(-100%); /* End on the left side */
+  }
 }

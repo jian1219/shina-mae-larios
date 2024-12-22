@@ -12,6 +12,7 @@ function Flowabout() {
         <div className='flow-scroll'>
             <div className='text-center mt-[100px]'>   
                 <h1>ABOUT</h1>
+                <p>SOON </p>
             </div>
           
         </div>

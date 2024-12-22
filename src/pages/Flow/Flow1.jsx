@@ -37,15 +37,15 @@ function Flow1() {
     },
     {
       img: logoshin,
-      title: "Shina's Inspiration",
+      title: "Shin - Shina - Yam",
       description: [
-        "Shina has always been my inspiration on creating this.",
-        "This web shows how I like Shina.",
+        "Shina has always been my inspiration on creating this web.",
+        "This web shows ...........",
       ],
     },
     {
       img: fbdating,
-      title: "We met through Facebook Dating.",
+      title: "Facebook Dating.",
       description: [
         "Shina and I met through Facebook Dating. When I first saw her, she seemed humble and reserved, but I couldn’t shake the thought that it might be a scam. Despite my doubts, we started chatting, and I quickly realized she was genuine and kind.",
         "As our conversations grew, I felt more comfortable and asked for her Facebook account. Through our exchanges there, I got to know her better, and my doubts completely disappeared. Meeting Shina turned out to be a wonderful experience, bringing joy and authenticity into my life.",
@@ -69,8 +69,8 @@ function Flow1() {
       video: dikewithshin,
       title: "Firstmeet ",
       description: [
-        "Here’s a special moment captured  Shina. We are in the Dike CBR.",
-        "I see a very himos shina and i was happy that day",
+        "Dike CBR.",
+        "I see a very himos shina and naa pay pa tabon sa face shhhh HAHAHAHA eyts",
       ],
     },
   ];

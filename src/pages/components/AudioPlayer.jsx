@@ -27,7 +27,7 @@ function AudioPlayer() {
           <ImageSlider />
         </div>
         <div className='mt-5'>
-        <h1 className='poem italic'>Like the dandelions drifting in the wind, my love for you is carried everywhere, growing stronger with each passing moment, as if the universe itself is wishing for us to be together forever</h1>
+        <h1 className='poem italic'>Like the dandelions scattered by the breeze, my feelings for you float softly through the air, carried farther with each passing moment, as if the world itself is guiding me toward you.</h1>
         </div>
       <audio ref={audioRef}>
         <source src={audio} type="audio/mpeg" />
