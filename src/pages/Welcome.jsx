@@ -18,7 +18,7 @@ function Welcome() {
   const navigate = useNavigate();
 
   const goToAnotherPage = () => {
-    navigate('/question1');
+    navigate('/flow1');
   };
 
   return (

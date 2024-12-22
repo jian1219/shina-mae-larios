@@ -1,10 +1,13 @@
 .footer{
-    background-color: rgba(48, 0, 40, 0.718);
-    padding: 4px 0;
+    background: linear-gradient(to right, #860227, #740261);
+    padding: 10px 0;
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: 1px;
+    bottom: 0px;
+    color: white;
+    font-size: 12px;
+    border-top: 2px solid white;
 }
 
 .welcome-bg{
@@ -249,3 +252,229 @@
     text-align: center;
   }
   
+
+
+
+
+
+
+
+
+  .flow1-bg{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right, #640028, rgb(21, 21, 21));
+    padding-bottom: 30px;
+    overflow: auto; /* Enable scrolling */
+    scrollbar-width: none; /* For Firefox */
+
+  }
+  .flow1-bg::-webkit-scrollbar {
+    display: none;
+  }
+
+  .flow1-header{
+    display: flex;
+    align-items: center;
+    padding: 10px 14px;
+    justify-content: space-between;
+  }
+  .flow1-header img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Ensures the image maintains its aspect ratio */
+    border-radius: 50%; /* Optional: Makes the image circular */
+    margin-right: 10px;
+}
+.flow1-header h1{
+  color: white;
+  font-size: 15px;
+}
+
+.flow-content{
+  text-align: center;
+}
+.flow-content .img-gradianr-border{
+  display: inline-block; /* Makes the container fit the image */
+  background: linear-gradient(to right, #371352, #6c0340);
+  border-radius: 22px; /* Slightly larger than the image for padding effect */
+  padding: 4px; /* Space for the gradient border */
+}
+.flow-content img{
+  width: 160px;
+  border-radius: 20px;
+  border: 2px solid linear-gradient(to right, #371352, #6c0340);
+}
+.flow-content .message{
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  color: white;
+  margin-top: 20px;
+}
+
+.flow-content button{
+  background: linear-gradient(to right, #371352, #6c0340);
+  padding: 5px 50px;
+  font-weight: 700;
+  color: white;
+  border-radius: 4px;
+  margin-top: 30px;
+  
+}
+.flow-content button:hover{
+  background: linear-gradient(to right, #450136, #4b128d);
+  
+}
+
+.flow-2{
+  width: 100%;
+  overflow: hidden;
+}
+
+.flow-header{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-bottom: 2px solid rgb(75, 75, 75);
+  background: linear-gradient(to right, #700303, #ffffff);
+}
+
+.menu-dropdown{
+  position: absolute;
+  color: white;
+  right: 0;
+  background: linear-gradient(to right, #9c0606, #2a2a2a);
+  padding: 10px 20px;
+  font-size: 12px;
+  border-bottom-left-radius: 5px;
+}
+.menu-dropdown ul{
+  display: grid;
+}
+.menu-dropdown ul button{
+  margin-top: 10px;
+}
+
+.flow-header-top{
+  position: sticky;
+  width: 100%;
+}
+
+.flow-footer{
+  background: linear-gradient(to right, #700303, #000000);
+  color: white;
+  font-weight: 600;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.flow-scroll{
+  width: 100%;
+  height: 90vh;
+  padding-bottom: 20px;
+  overflow-y: scroll;
+  background-color: rgb(213, 135, 148);
+  
+}
+.flow-scroll::-webkit-scrollbar {
+  width: 1px; /* Width of the scrollbar */
+}
+
+.flow-footer-bot {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 10; /* Ensure the footer stays above other content */
+}
+
+.flow-2-content{
+  padding: 10px;
+  width: 100%;
+  
+}
+
+.flow-2-content img{
+  
+}
+
+.qandAbutton{
+  background: linear-gradient(to right, #05679c, #6b0278);
+  padding: 3px 50px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.color-survey-submit{
+  color: rgb(5, 96, 26);
+}
+
+.button-survey{
+  background: linear-gradient(to right, #05679c, #6b0278);
+  font-weight: 600;
+}
+
+.colorimageh1{
+  color: #d5d5d5;
+}
+
+.photo-gallery {
+  column-count: 3; /* Number of columns */
+  column-gap: 8px; /* Space between columns */
+}
+
+.photo-gallery-item {
+  break-inside: avoid; /* Prevent items from breaking inside a column */
+  margin-bottom: 8px; /* Space between rows */
+  width: 100%; /* Let the browser handle aspect ratio */
+  height: auto; /* Maintain original aspect ratio */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.photo-gallery-item:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+.enlarged-image-view {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.enlarged-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: linear-gradient(to right, #a30e6d, #042497);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.back-button:hover {
+  background-color: #f0f0f0;
+}

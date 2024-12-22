@@ -10,6 +10,12 @@ import About from "./pages/About"
 //import FLOWS";
 
 import Flow1 from "./pages/Flow/Flow1";
+import Flow2 from "./pages/Flow/Flow2";
+import Survey from "./pages/Flow/Survey";
+import Images from "./pages/Flow/Images";
+import Flowabout from "./pages/Flow/Flowabout";
+
+import Lock from "./pages/Lock";
 
 //import Welcome from "./pages/Welcome";
 
@@ -18,13 +24,20 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Welcome />} /> 
+          <Route path="/" element={<Lock />} /> 
+
+          <Route path="/welcome" element={<Welcome />} /> 
           <Route path="/question1" element={<Ask1 />} /> 
           <Route path="/home" element={<Home />} /> 
           <Route path="/about" element={<About />} /> 
 
 
           <Route path="/flow1" element={<Flow1 />} /> 
+          <Route path="/flow2" element={<Flow2 />} /> 
+          <Route path="/Survey" element={<Survey />} /> 
+          <Route path="/images" element={<Images />} /> 
+          <Route path="/infoAbout" element={<Flowabout />} /> 
+          
           
         </Routes>
       </BrowserRouter>
