@@ -50,12 +50,27 @@ function Flow2() {
             <div className='px-[10px] text-[13px] mt-[6px]'>
               <p>Every time I hear Dandelions by Ruth B, I think of you. It's like the song was written about how I feel—wishing on every dandelion for you to always be in my life. You make my heart feel full, like I’m living in a dream that I never want to wake up from. 🌼💛</p>
             </div>
-            <div>
-              <AudioPlayer />
+            <div className='text-center mt-[30px]'>
+              {isPlayButtonVisible && (
+                <button onClick={handlePlayClick}>
+                  <img className='w-[100px]' src={playIcon} alt="Play" />
+                </button>
+              )}
             </div>
            
             {/* Show the audio player and play the audio when the button is clicked */}
-          
+            {isAudioPlayerVisible && (
+              <div className='mt-4'>
+                <ImageSlider />
+                <audio ref={audioRef} autoPlay>
+                  <source src={audio} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+                <div className='mt-5'>
+                  <h1 className='poem italic'>Like the dandelions drifting in the wind, my love for you is carried everywhere, growing stronger with each passing moment, as if the universe itself is wishing for us to be together forever</h1>
+                </div>
+              </div>
+            )}
           </div>
           <div>
             <img src={pubgpic} alt="" />
