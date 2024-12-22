@@ -65,6 +65,9 @@ function Flow2() {
             <h1 className='text-[16px] font-semibold'>Small Survey Shin hahaha</h1>
             <button className='qandAbutton' onClick={() => navigate('/survey')}> <img className='w-[100px]' src={qandA} alt="" /> </button>
           </div>
+          <div>
+            asas
+          </div>
         </div>
       </div>
 
