@@ -25,9 +25,9 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Lock />} /> 
+       
 
-          <Route path="/welcome" element={<Welcome />} /> 
+          <Route path="/" element={<Welcome />} /> 
           <Route path="/question1" element={<Ask1 />} /> 
           <Route path="/home" element={<Home />} /> 
           <Route path="/about" element={<About />} /> 

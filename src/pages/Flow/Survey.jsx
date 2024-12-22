@@ -37,18 +37,18 @@ function Survey() {
       </div>
       <div className='flow-scroll'>
         <div className='flex justify-center mt-10'>
-          <img className='w-[200px] rounded-[50%]' src={catgif} alt="Cat GIF" />
+          <img className='w-[170px] rounded-[50%]' src={catgif} alt="Cat GIF" />
         </div>
-        <h1 className='text-center text-xl font-semibold'>Shin Simple Question</h1>
-        <div className='text-center mt-5'>
-          <p className='text-lg font-medium'>How many percent would you say yes if I "ligaw" you shin?</p>
+        <h1 className='text-center text-[20px] font-semibold'>Shin Simple Question</h1>
+        <div className='text-center mt-5 px-[20px]'>
+          <p className='text-[16px] font-medium'>How many percent would you say yes if I "ligaw" you shin?</p>
           <input
             type="range"
             min="0"
             max="100"
             value={response}
             onChange={handleRangeChange}
-            className="mt-4 w-[80%]"
+            className="mt-4 w-[90%]"
           />
           <div className='mt-2'>
             <span className='text-sm'>{response}%</span>
@@ -63,7 +63,7 @@ function Survey() {
                         value={nickname}
                         onChange={(e) => setNickname(e.target.value)}
                         placeholder="Input here"
-                        className="mt-2 p-2 border rounded-lg"
+                        className="mt-2 p-1 border rounded-lg"
                     />
                 </div>
               
