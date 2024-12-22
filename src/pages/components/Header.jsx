@@ -17,10 +17,10 @@ function Header() {
     <div>
       <div className='flow-header'>
         <div className='flex items-center gap-3'>
-          <img className='w-[50px]' src={petlogo} alt="" />
-          <h1 className='text-[22px] text-white font-semibold'>My Love</h1>
+          <img className='w-[35px]' src={petlogo} alt="" />
+          <h1 className='text-[18px] text-white font-semibold'>My Love</h1>
         </div>
-        <div className='flex gap-3 text-[14px] font-medium'>
+        <div className='flex gap-4 text-[13px] font-medium'>
           <button onClick={() => navigate('/flow2')}>Home</button>
           <button onClick={() => navigate('/infoAbout')}>About</button>
           <button onClick={toggleMenu}>
