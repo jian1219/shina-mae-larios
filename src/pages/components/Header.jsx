@@ -34,7 +34,7 @@ function Header() {
             <ul>
               <button onClick={() => navigate('/images')}>Images</button>
               <button onClick={() => navigate('/survey')}>Simple Questions</button>
-              <button onClick={() => navigate('/creator')}>Soon</button>
+              <button onClick={() => navigate('/christmasTree')}>Christmas Tree</button>
               <button onClick={() => navigate('/creator')}>Soon</button>
               <button onClick={() => navigate('/creator')}>Soon</button>
               <button onClick={() => navigate('/creator')}>Soon</button>

@@ -15,6 +15,7 @@ import Survey from "./pages/Flow/Survey";
 import Images from "./pages/Flow/Images";
 import Flowabout from "./pages/Flow/Flowabout";
 import Creator from "./pages/Flow/Creator";
+import ChristmasTree from "./pages/Flow/ChristmasTree";
 
 import Lock from "./pages/Lock";
 
@@ -39,6 +40,7 @@ function App() {
           <Route path="/images" element={<Images />} /> 
           <Route path="/infoAbout" element={<Flowabout />} /> 
           <Route path="/creator" element={<Creator />} /> 
+          <Route path="/christmasTree" element={<ChristmasTree />} /> 
           
           
         </Routes>

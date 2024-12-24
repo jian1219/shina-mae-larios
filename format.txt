@@ -1,0 +1,57 @@
+import React from 'react'
+
+import Header from '../components/Header'
+import FlowFooter from '../components/FlowFooter'
+
+function ChristmasTree() {
+  return (
+    <div className='flow-2'>
+
+        <div className='flow-header-top'>
+            <Header />
+        </div>
+        <div className='flow-scroll'>
+
+        </div>
+
+
+        <div className='flow-footer-bot'>
+            <FlowFooter />
+        </div>
+      
+    </div>
+  )
+}
+
+export default ChristmasTree
+
+
+
+
+
+
+
+
+
+
+
+.christmas-tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This ensures the content is spread out */
+  height: 100%; /* Ensure the container takes full viewport height */
+  padding-bottom: 20px;
+  background-image: url("../images/shin 4.jpg");
+}
+
+.uploaded-content {
+  flex-grow: 1; /* This allows the uploaded content section to take available space */
+}
+
+.upload-button {
+  /* Your existing styles */
+}
+
+.file-input {
+  /* Your existing styles */
+}

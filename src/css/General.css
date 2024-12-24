@@ -508,3 +508,136 @@
     transform: translateX(-100%); /* End on the left side */
   }
 }
+
+
+.christmas-uploaded-image{
+  width: 60px;
+}
+
+.christmas-tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This ensures the content is spread out */
+  height: 100%; /* Ensure the container takes full viewport height */
+  padding-bottom: 20px;
+  background-image: url("../images/christmas_tree-removebg-preview.png");
+  background-position: center;  /* Adjust this value to move the image down */
+  background-size: cover;
+  padding: 10px;
+}
+
+.uploaded-content {
+  flex-grow: 1; /* This allows the uploaded content section to take available space */
+}
+
+.upload-button {
+  /* Your existing styles */
+}
+
+.file-input {
+  /* Your existing styles */
+}
+
+
+.christmas-input{
+  background: linear-gradient(to right, #8b0000, #02830f);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.christmas-file-input{
+  width: 100px;
+  border-radius: 5px;
+}
+
+.christmas-upload-button{
+  background: linear-gradient(to right, #070f7e, #6c0459);
+  color: rgb(16, 217, 70);
+  padding: 2px 5px;
+  margin-top: -5px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.uploaded-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tree-row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.tree-row-0 {
+  justify-content: center;
+}
+
+.tree-row-1 {
+  justify-content: space-between;
+  width: 70%;
+}
+
+.tree-row-2 {
+  justify-content: space-between;
+  width: 80%;
+}
+
+.tree-row-3 {
+  justify-content: space-between;
+  width: 90%;
+}
+
+.christmas-uploaded-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.modal-image {
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button:hover {
+  background-color: darkred;
+}
