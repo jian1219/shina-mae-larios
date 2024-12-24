@@ -131,7 +131,7 @@ function ChristmasTree() {
 
           {/* Input section will be pushed to the bottom */}
           <div className='christmas-input'>
-            <p className='text-[14px] font-semibold text-white'>Dungagi shin:</p>
+            <p className='text-[14px] font-semibold text-white'>Add Cutiepie face:</p>
             <div className='flex justify-center items-center'>
               <input
                 type='file'
