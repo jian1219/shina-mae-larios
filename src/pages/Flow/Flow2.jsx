@@ -13,6 +13,7 @@ import qandA from "../../icons/qa.png"
 import AudioPlayer from '../components/AudioPlayer';
 import onepiece from "../../icons/onepiece.jpg"
 import zoro from "../../icons/Roronoa_Zoro.jpg"
+import ChristmasTree from '../../images/christmas_tree-removebg-preview.png';
 
 
 
@@ -68,6 +69,12 @@ function Flow2() {
           <div className='text-center mt-10'>
             <h1 className='text-[16px] font-semibold'>Small Survey Shin hahaha</h1>
             <button className='qandAbutton' onClick={() => navigate('/survey')}> <img className='w-[100px]' src={qandA} alt="" /> </button>
+          </div>
+          <div className='mb-10 mt-10'>
+            <div className='flex justify-center'>
+              <button  onClick={() => navigate('/christmasTree')}><img className='w-[100px]' src={ChristmasTree} alt="" /></button>
+            </div>
+            <h1 className='text-[20px] font-semibold text-center'>Click Christmas Tree</h1>
           </div>
           <div className='py-2 flex items-center'>
             <img className='w-[200px]' src={zoro} alt="" />

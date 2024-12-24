@@ -543,7 +543,7 @@
   background: linear-gradient(to right, #8b0000, #02830f);
   margin-bottom: 10px;
   border-radius: 10px;
-  padding: 4px;
+  padding: 4px 15px;
 }
 
 .christmas-file-input{
