@@ -99,7 +99,9 @@ function ChessGame() {
       </div>
       <main>
         <h1 className='text-center pt-3 text-[20px] font-semibold'>Easy Chess</h1>
-        <h2 className='ml-[10px]'>Turn: {turn}</h2>
+        <p className='text-center'>Sure win naka ani shin</p>
+        <p className='text-center text-[12px]'>If you win shin you have a price</p>
+        <h2 className='ml-[10px] text-[11px] font-medium'>Turn: {turn}</h2>
         <div className="captured-pieces ai">
           <h3 className='text-center'>AI Captured:</h3>
           <div className="captured-list">
@@ -153,7 +155,7 @@ function ChessGame() {
           </div>
         </div>
       </main>
-      <div>
+      <div className='absolute w-[100%] bottom-0'>
         <FlowFooter className="FlowFooter" />
       </div>
     </div>
