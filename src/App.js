@@ -16,6 +16,7 @@ import Images from "./pages/Flow/Images";
 import Flowabout from "./pages/Flow/Flowabout";
 import Creator from "./pages/Flow/Creator";
 import ChristmasTree from "./pages/Flow/ChristmasTree";
+import Chess from "./pages/Flow/Chess";
 
 import Lock from "./pages/Lock";
 
@@ -41,6 +42,7 @@ function App() {
           <Route path="/infoAbout" element={<Flowabout />} /> 
           <Route path="/creator" element={<Creator />} /> 
           <Route path="/christmasTree" element={<ChristmasTree />} /> 
+          <Route path="/chess" element={<Chess />} /> 
           
           
         </Routes>

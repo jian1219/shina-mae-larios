@@ -8,6 +8,9 @@ import Header from '../components/Header';
 import FlowFooter from '../components/FlowFooter';
 import christmasSong from "../../audio/christmas.mp3"
 
+import playIcon from "../../icons/play (1).png"
+import pauseIcon from "../../icons/pause.png"
+
 function ChristmasTree() {
   const [selectedFile, setSelectedFile] = useState(null);
   const [uploadStatus, setUploadStatus] = useState("");
