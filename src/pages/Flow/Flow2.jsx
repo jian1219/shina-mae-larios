@@ -15,6 +15,8 @@ import onepiece from "../../icons/onepiece.jpg"
 import zoro from "../../icons/Roronoa_Zoro.jpg"
 import ChristmasTree from '../../images/christmas_tree-removebg-preview.png';
 
+import whiteHorse from "../../icons/chess/white horse.png"
+
 
 
 function Flow2() {
@@ -76,6 +78,22 @@ function Flow2() {
             </div>
             <h1 className='text-[20px] font-semibold text-center'>Click Christmas Tree</h1>
           </div>
+
+
+          <div className='mb-10 mt-10 flex items-center'>
+           
+            <div className='ml-[10px]'>
+            <div className='flex justify-center'>
+            <button  onClick={() => navigate('/chess')}><img className='w-[100px] chessbut' src={whiteHorse} alt="" /></button>
+            </div>
+            <h1 className='text-[20px] font-semibold text-center'>Play Chess</h1>
+              <p className='text-center text-[14px]'>If walay Reward mo show or dli mo move ang Piece then bomboang ang code HAHAHA</p>
+
+              <p className='mt-3 text-center text-[10px] font-medium'>ver-1.1</p>
+            </div>
+          </div>
+
+
           <div className='py-2 flex items-center'>
             <img className='w-[200px]' src={zoro} alt="" />
             <div className='text-center px-4'>

@@ -711,3 +711,7 @@
   height: 20px;
   object-fit: contain;
 }
+
+.chessbut{
+  margin: auto;
+}

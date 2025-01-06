@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Chess } from 'chess.js';
 
 import Header from '../components/Header';
@@ -24,9 +24,25 @@ function ChessGame() {
   const [turn, setTurn] = useState('Player 1'); // Track turn
   const [playerCapturedPieces, setPlayerCapturedPieces] = useState([]); // Player 1 captured pieces
   const [aiCapturedPieces, setAiCapturedPieces] = useState([]); // AI captured pieces
+  const [gameOver, setGameOver] = useState(false); // Track if the game is over
+  const [winner, setWinner] = useState(null); // Track who won the game
+
+  // Check for game over status
+  useEffect(() => {
+    if (game.game_over) {
+      setGameOver(true);
+      if (game.in_checkmate()) {
+        setWinner(game.turn() === 'w' ? 'AI' : 'Player 1');
+      } else if (game.in_draw()) {
+        setWinner('Draw');
+      }
+    }
+  }, [game]);
 
   // Handle square click
   const handleSquareClick = (row, col) => {
+    if (gameOver) return; // Prevent moves if the game is over
+
     const square = `${String.fromCharCode(97 + col)}${8 - row}`; // Convert to algebraic notation
 
     if (selectedSquare) {
@@ -154,6 +170,14 @@ function ChessGame() {
             ))}
           </div>
         </div>
+
+        {/* Hidden div that will show when game is over */}
+        {gameOver && (
+          <div className="game-over-message">
+            <h2>{winner === 'Draw' ? 'Game Over: It\'s a Draw' : `${winner} Wins!`}</h2>
+            <p>Congratulations!</p>
+          </div>
+        )}
       </main>
       <div className='absolute w-[100%] bottom-0'>
         <FlowFooter className="FlowFooter" />
