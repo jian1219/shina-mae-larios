@@ -99,7 +99,7 @@ function ChessGame() {
       </div>
       <main>
         <h1 className='text-center pt-3 text-[20px] font-semibold'>Easy Chess</h1>
-        <h2>Turn: {turn}</h2>
+        <h2 className='ml-[10px]'>Turn: {turn}</h2>
         <div className="captured-pieces ai">
           <h3 className='text-center'>AI Captured:</h3>
           <div className="captured-list">
@@ -140,7 +140,7 @@ function ChessGame() {
           ))}
         </div>
         <div className="captured-pieces player">
-          <h3 className='text-center'>Player 1 Captured:</h3>
+          <h3 className='text-center'>Shin Captured:</h3>
           <div className="captured-list">
             {playerCapturedPieces.map((piece, index) => (
               <img

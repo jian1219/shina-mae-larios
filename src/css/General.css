@@ -677,6 +677,7 @@
 
 .selected {
   border: 3px solid #815f5f;
+  background-color: rgb(4, 97, 6);
 }
 
 .chess-piece {
