@@ -714,4 +714,13 @@
 
 .chessbut{
   margin: auto;
+  
+}
+
+.border-seperate{
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  margin-top: 20px;
+  padding-bottom: 15px;
+
 }
